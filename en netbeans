@@ -1,0 +1,29 @@
+boton calcular
+ double salariobase;
+      double venta1, venta2, venta3;
+      double comision, salariototal;
+      
+      salariobase= Double.parseDouble(txtsalariobase.getText());
+      venta1= Double.parseDouble(txtventa1.getText());
+      venta2= Double.parseDouble(txtventa2.getText());
+      venta3= Double.parseDouble(txtventa3.getText());
+      
+      comision= (venta1 + venta2 + venta3) * 100/20;
+    
+      salariototal= salariobase + comision;
+    
+      txtcomision.setText(Double.toString(comision));
+      txtsalario.setText(Double.toString(salariototal));
+      
+      
+      boton limpiar
+        txtsalariobase.setText(null);   
+        txtventa1.setText(null);
+        txtventa2.setText(null);
+        txtventa3.setText(null);
+        txtcomision.setText(null);
+        txtsalario.setText(null);
+        
+        boton salir
+         this.dispose();
+       
